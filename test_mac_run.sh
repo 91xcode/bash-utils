@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # rm -f utils.sh
-if [ ! -f "utils.sh" ];then
-    echo "Download utils to $CURRENT_DIR/utils.sh ."
-    curl https://raw.githubusercontent.com/91xcode/bash-utils/master/utils.sh -o utils.sh
+if [ ! -f "mac_utils.sh" ];then
+    echo "Download utils to $CURRENT_DIR/mac_utils.sh ."
+    curl https://raw.githubusercontent.com/91xcode/bash-utils/master/mac_utils.sh -o mac_utils.sh
     # chmod +x utils.sh
 fi
 
@@ -13,7 +13,7 @@ cd "$BASEDIR" || exit
 CURRENT_DIR=$(pwd)
 
 # source utils
-source "${CURRENT_DIR}"/utils.sh
+source "${CURRENT_DIR}"/mac_utils.sh
 # do something
 echo_step  "1. this is the step 1"
 
