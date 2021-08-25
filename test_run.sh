@@ -3,7 +3,7 @@
 # rm -f utils.sh
 if [ ! -f "utils.sh" ];then
     echo "Download utils to $CURRENT_DIR/utils.sh ."
-    curl https://raw.githubusercontent.com/linsir/bash-utils/master/utils.sh -o utils.sh
+    curl https://raw.githubusercontent.com/91xcode/bash-utils/master/utils.sh -o utils.sh
     # chmod +x utils.sh
 fi
 
